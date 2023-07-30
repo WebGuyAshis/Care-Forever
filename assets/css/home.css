@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    /* background: rgba(230, 230, 230, 0.6); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo{
+    display: flex;
+}
+
+.logo-img{
+    height: 30px;
+}
+.logo-text{
+    color: rgb(69, 69, 69);
+}
+
+/* Nav-links */
+.nav-links{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav-links-items{
+    list-style: none;
+    padding: 0 10px;
+}
+.nav-links-items a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links-items a:hover{
+    color: rgb(255, 33, 70);
+}
+
+
+/* contact-now */
+.contact-now{
+    outline: 1px solid grey;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-now:hover{
+    outline: 2px solid rgb(255, 0, 43);
+    /* background-color: rgb(255, 140, 157);
+    color: white; */
+}
+
+
+
+/* Main---------------------*/
+/* Home */
+#home{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#home::before{
+    content: "";
+    background-image: url('/images/homepageq.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* #home img{
+    height: 100%;
+    width: 100%;
+} */
+.home-quote{
+
+}
+
+.get-care{
+    margin-top: 10px;
+    padding: 8px 10px;
+    outline: 1px solid rgb(210, 210, 210);
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
