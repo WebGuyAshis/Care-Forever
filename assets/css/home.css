@@ -2,17 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Scroll Bar Design */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
 .navbar{
     padding: 0 40px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 1;
     height: 7vh;
     width: 100%;
-    /* background: rgba(230, 230, 230, 0.6); */
+    background: rgb(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,14 +32,17 @@ body{
 /* Logo */
 .logo{
     display: flex;
+    color: white;
 }
 
 .logo-img{
     height: 30px;
+    color: white;
+
 }
-.logo-text{
+/* .logo-text{
     color: rgb(69, 69, 69);
-}
+} */
 
 /* Nav-links */
 .nav-links{
@@ -44,7 +58,7 @@ body{
 }
 .nav-links-items a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .nav-links-items a:hover{
     color: rgb(255, 33, 70);
@@ -53,7 +67,8 @@ body{
 
 /* contact-now */
 .contact-now{
-    outline: 1px solid grey;
+    color: white;
+    outline: 1px solid rgb(231, 231, 231);
     border-radius: 20px;
     padding: 5px 10px;
     cursor: pointer;
@@ -62,8 +77,6 @@ body{
 
 .contact-now:hover{
     outline: 2px solid rgb(255, 0, 43);
-    /* background-color: rgb(255, 140, 157);
-    color: white; */
 }
 
 
@@ -75,7 +88,7 @@ body{
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: rgb(0, 0, 0, 0.2);
+    /* background-color: rgb(0, 0, 0, 0.1); */
     display: flex;
     align-items: center;
     padding: 0 40px;
@@ -98,7 +111,7 @@ body{
     width: 100%;
 } */
 .home-quote{
-
+    color:black;
 }
 
 .get-care{
@@ -110,4 +123,76 @@ body{
     color: white;
     background-color: rgb(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+
+.section-heading{
+    text-align: center;
+}
+
+/* Care Services */
+#care-services{
+    padding: 20px 200px;
+}
+
+.services-card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.service-card{
+    flex: 1;
+    min-width: 40%;
+    /* min-width: 50%; */
+    /* width: 25%; */
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service-card:nth-child(1):hover{
+    background-color: rgb(223, 255, 223);
+}
+.service-card:nth-child(2):hover{
+background-color: rgb(255, 215, 222);
+}
+.service-card:nth-child(3):hover{
+    background-color: rgb(255, 234, 207);
+}
+.service-card:nth-child(4):hover{
+    background-color: rgb(255, 217, 217);
+}
+
+.service-img{
+    height: 100px;
+}
+
+
+
+
+
+
+/* footer*/
+#about-us{
+    background-color: rgb(27, 27, 27);
+    color: rgb(227, 227, 227);
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item a {
+    color: rgb(193, 193, 193);
+    text-decoration: none;
+}
+
+.follow-links img{
+    height: 40px;
 }
