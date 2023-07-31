@@ -18,36 +18,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img class="logo-img" src="/images/logo.png" alt="">
-            <h1 class="logo-text">Care Forever</h1>
-        </div>
-
-        <ul class="nav-links">
-            <li class="nav-links-items">
-                <a href="#home">Home</a>
-            </li>
-            <li class="nav-links-items">
-                <a href="#care-services">Care Services</a>
-            </li>
-            <li class="nav-links-items">
-                <a href="#">Near Me</a>
-            </li>
-            <li class="nav-links-items">
-                <a href="#">Events</a>
-            </li>
-            <li class="nav-links-items">
-                <a href="#about-us">About Us</a>
-            </li>
-        </ul>
-
-        <div class="contact-now">
-            Contact Now
-        </div>
-    </nav>
-
-
+    <%- include("_header.ejs")%>
+    
     <div class="container">
         <div id="home" class="home-section">
 
@@ -63,50 +35,47 @@
 
 
         <div id="care-services" class="care-section">
-            <h1 class="section-heading">Care Services</h1>
+            <h1 class="section-heading">Embrace the care, cherish the moments - Our services tailored for you.</h1>
             <div class="services-card-container">
-                <div class="service-card" id="nutrition">
-                    <img class="service-img" src="/images/nutritionist.png" alt="">
-                    <h3 class="service-heading">Food and Nutrition</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
+                <div class="service-card" id="health-eminders">
+                    <img class="service-img" src="/images/opd.gif" alt="">
+                    <h3 class="service-heading">Health Reminders</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
                         Tempore ea ad fugit suscipit repudiandae.</p>
                     <a href="">Learn More</a>
                 </div>
 
-                <div class="service-card" id="nutrition">
-                    <img class="service-img" src="/images/medical-result.png" alt="">
+                <div class="service-card" id="medical-care">
+                    <img class="service-img" src="/images/heartbeat.gif" alt="">
                     <h3 class="service-heading">Medical Care</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
                         Tempore ea ad fugit suscipit repudiandae.</p>
                     <a href="">Learn More</a>
                 </div>
 
-                <div class="service-card" id="nutrition">
-                    <img class="service-img" src="/images/friends.png" alt="">
-                    <h3 class="service-heading">Connect With Others</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
+                <div class="service-card" id="connect">
+                    <img class="service-img" src="/images/medicine.gif" alt="">
+                    <h3 class="service-heading">Order Medicines</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
                         Tempore ea ad fugit suscipit repudiandae.</p>
                     <a href="">Learn More</a>
                 </div>
 
-                <div class="service-card" id="nutrition">
-                    <img class="service-img" src="/images/medical-app.png" alt="">
-                    <h3 class="service-heading">Domestic Assistance</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
+                <div class="service-card" id="hospital-care">
+                    <img class="service-img" src="/images/hospital.gif" alt="">
+                    <h3 class="service-heading">Hospital Care</h3>
+                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
                         Tempore ea ad fugit suscipit repudiandae.</p>
                     <a href="">Learn More</a>
                 </div>
             </div>
         </div>
 
-        <div class="care-services">
-
-        </div>
     </div>
 
     <footer id="about-us">
         <div class="about-company">
-            <h2>Care Forever</h2>
+            <h2 class="footer-heading">Care Forever</h2>
             <p>Caring Hearts, Forever Embracing the Journey 
                 <br>
                 of Aging with Love and Support.</p>
