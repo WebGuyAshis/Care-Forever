@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.health-container {
+  /* width: 100%; */
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-heading {
+  font-size: 70px;
+}
+
+/* Dates */
+.reminder-dates {
+  /* margin-top: 20px; */
+}
+.reminder-dates h1 h3 {
+  margin: 10px 0;
+}
+.dates-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .dates{
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    padding: 10px;
+}
+.dates div{
+    text-align: center;
+} */
+
+/* categories */
+
+.categories {
+  /* margin-top: 20px; */
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+  align-items: center;
+  /* margin: auto; */
+}
+.category {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(227, 227, 227);
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+.medicine {
+  background-color: rgb(39, 125, 255);
+  color: white;
+}
+
+/* Medication */
+.medication-container {
+  /* margin-top: 20px; */
+  background-color: rgb(242, 242, 242);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 700px;
+  /* margin: auto; */
+}
+.medication-header {
+  display: flex;
+  gap: 100px;
+}
+.medication-header h4 {
+  width: 100px;
+  text-align: center;
+}
+
+/* Schedule */
+.schedule {
+  /* background-color: rgb(164, 225, 255); */
+  border-radius: 10px;
+  display: flex;
+  gap: 100px;
+  /* width: 550px; */
+}
+.timing {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+.dosage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dosage-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(255, 207, 227);
+
+}
+.dosage-name {
+  width: 150px;
+  margin-left: 20px;
+}
+.done {
+  background-color: rgb(52, 129, 52);
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+hr{
+    /* color: rgb(196, 196, 196); */
+    border: 0.5px solid rgb(161, 161, 161);
+}

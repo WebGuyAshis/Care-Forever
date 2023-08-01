@@ -14,113 +14,115 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/_header.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <%- include("_header.ejs")%>
-    
-    <div class="container">
-        <div id="home" class="home-section">
 
-            <div class="home-quote">
-                <h1>Where age is celebrated,<br> and care is eternal.</h1>
-                <p>Full time support from our top specialists. </p>
-                <div class="get-care">
-                    Get Care
+        <div class="container">
+            <div id="home" class="home-section">
+
+                <div class="home-quote">
+                    <h1>Where age is celebrated,<br> and care is eternal.</h1>
+                    <p>Full time support from our top specialists. </p>
+                    <div class="get-care">
+                        Get Care
+                    </div>
+                </div>
+                <!-- <img src="/images/homepageq.jpg" alt=""> -->
+            </div>
+
+
+            <div id="care-services" class="care-section">
+                <h1 class="section-heading">Embrace the care, cherish the moments - Our services tailored for you.</h1>
+                <div class="services-card-container">
+                    <a href="/health-reminder" class="service-card" id="health-eminders">
+                        <img class="service-img" src="/images/opd.gif" alt="">
+                        <h3 class="service-heading">Health Reminders</h3>
+                        <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit
+                            nemo quisquam a corrupti!
+                            Tempore ea ad fugit suscipit repudiandae.</p>
+                    </a>
+
+                    <a href="/medical-care" class="service-card" id="medical-care">
+                        <img class="service-img" src="/images/heartbeat.gif" alt="">
+                        <h3 class="service-heading">Medical Care</h3>
+                        <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit
+                            nemo quisquam a corrupti!
+                            Tempore ea ad fugit suscipit repudiandae.</p>
+                    </a>
+
+                    <a href="/order-medicine" class="service-card" id="order-medicine">
+                        <img class="service-img" src="/images/medicine.gif" alt="">
+                        <h3 class="service-heading">Order Medicines</h3>
+                        <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit
+                            nemo quisquam a corrupti!
+                            Tempore ea ad fugit suscipit repudiandae.</p>
+                    </a>
+
+                    <a href="/hospital-care" class="service-card" id="hospital-care">
+                        <img class="service-img" src="/images/hospital.gif" alt="">
+                        <h3 class="service-heading">Hospital Care</h3>
+                        <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit
+                            nemo quisquam a corrupti!
+                            Tempore ea ad fugit suscipit repudiandae.</p>
+                    </a>
                 </div>
             </div>
-            <!-- <img src="/images/homepageq.jpg" alt=""> -->
+
         </div>
 
-
-        <div id="care-services" class="care-section">
-            <h1 class="section-heading">Embrace the care, cherish the moments - Our services tailored for you.</h1>
-            <div class="services-card-container">
-                <div class="service-card" id="health-eminders">
-                    <img class="service-img" src="/images/opd.gif" alt="">
-                    <h3 class="service-heading">Health Reminders</h3>
-                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
-                        Tempore ea ad fugit suscipit repudiandae.</p>
-                    <a href="">Learn More</a>
-                </div>
-
-                <div class="service-card" id="medical-care">
-                    <img class="service-img" src="/images/heartbeat.gif" alt="">
-                    <h3 class="service-heading">Medical Care</h3>
-                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
-                        Tempore ea ad fugit suscipit repudiandae.</p>
-                    <a href="">Learn More</a>
-                </div>
-
-                <div class="service-card" id="connect">
-                    <img class="service-img" src="/images/medicine.gif" alt="">
-                    <h3 class="service-heading">Order Medicines</h3>
-                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
-                        Tempore ea ad fugit suscipit repudiandae.</p>
-                    <a href="">Learn More</a>
-                </div>
-
-                <div class="service-card" id="hospital-care">
-                    <img class="service-img" src="/images/hospital.gif" alt="">
-                    <h3 class="service-heading">Hospital Care</h3>
-                    <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit nemo quisquam a corrupti!
-                        Tempore ea ad fugit suscipit repudiandae.</p>
-                    <a href="">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer id="about-us">
-        <div class="about-company">
-            <h2 class="footer-heading">Care Forever</h2>
-            <p>Caring Hearts, Forever Embracing the Journey 
+        <footer id="about-us">
+            <div class="about-company">
+                <h2 class="footer-heading">Care Forever</h2>
+                <p>Caring Hearts, Forever Embracing the Journey
+                    <br>
+                    of Aging with Love and Support.
+                </p>
                 <br>
-                of Aging with Love and Support.</p>
-                <br>
-            <h3>Follow Us</h3>
-            <div class="follow-links">
-                <a href=""><img src="/images/twitter.png" alt=""></a>
-                <a href=""></a><img src="/images/facebook.png" alt=""></a>
-                <a href=""></a><img src="/images/instagram.png" alt=""></a>
+                <h3>Follow Us</h3>
+                <div class="follow-links">
+                    <a href=""><img src="/images/twitter.png" alt=""></a>
+                    <a href=""></a><img src="/images/facebook.png" alt=""></a>
+                    <a href=""></a><img src="/images/instagram.png" alt=""></a>
+                </div>
             </div>
-        </div>
 
-        <div class="footer-item" id="company-contact">
-            <h2>Service</h2>
-            <a href="">Hospital Care</a>
-            <a href="">Personal Care</a>
-            <a href="">Resident Care</a>
+            <div class="footer-item" id="company-contact">
+                <h2>Service</h2>
+                <a href="">Hospital Care</a>
+                <a href="">Personal Care</a>
+                <a href="">Resident Care</a>
 
-        </div>
+            </div>
 
-        <div class="footer-item" id="company">
-            <h2>Company</h2>
-            <a href="">Blog</a>
-            <a href="">Who We Are</a>
-            <a href="">Our Mission</a>
-            <a href="">Our Care Process</a>
-            <a href="">For Professionals</a>
+            <div class="footer-item" id="company">
+                <h2>Company</h2>
+                <a href="">Blog</a>
+                <a href="">Who We Are</a>
+                <a href="">Our Mission</a>
+                <a href="">Our Care Process</a>
+                <a href="">For Professionals</a>
 
-        </div>
+            </div>
 
-        <div class="footer-item" id="resources">
-            <h2>Resources</h2>
-            <a href="">F.A.Q</a>
-            <a href="">Career</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms</a>
-            <a href="">Payment</a>
-        </div>
+            <div class="footer-item" id="resources">
+                <h2>Resources</h2>
+                <a href="">F.A.Q</a>
+                <a href="">Career</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms</a>
+                <a href="">Payment</a>
+            </div>
 
-        <div class="footer-item" id="contact">
-            <h2>Contacts</h2>
-            <a href="">+91 1234567890</a>
-            <a href="">infomail.com</a>
-        </div>
-    </footer>
+            <div class="footer-item" id="contact">
+                <h2>Contacts</h2>
+                <a href="">+91 1234567890</a>
+                <a href="">infomail.com</a>
+            </div>
+        </footer>
 </body>
 
 </html>

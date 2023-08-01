@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/_header.css">
+    <link rel="stylesheet" href="/css/healthReminder.css">
+</head>
+
+<body>
+    <%- include("_header")%>
+
+        <div class="health-container">
+            <h1 class="section-heading">How is your Health Today?</h1>
+            <!-- Date -->
+            <div class="reminder-dates">
+                <h3 class="todays-date">
+                    August 1, 2023
+                </h3>
+                <h1>Today's Reminders</h1>
+                <!-- <div class="dates-list">
+                <div class="dates">
+                    <div class="day">
+                        Tue
+                    </div>
+                    <div class="date">
+                        1
+                    </div>
+                </div>
+            </div> -->
+            </div>
+            <!-- Categories -->
+            <div class="categories">
+                <!-- <h3>Categories: </h3> -->
+                <h3 class="medicine category">
+                    Medicine
+                </h3>
+
+                <h3 class="exercise category">
+                    Exercise
+                </h3>
+            </div>
+
+            <!-- Medication -->
+            <div class="medication-container">
+                <div class="medication-header">
+                    <h4>Time</h4>
+                    <h4>Medication</h4>
+                </div>
+                <!-- Morning -->
+                <div class="morning-schedule schedule">
+                    <div class="timing">
+                        Morning
+                    </div>
+                    <div class="dosage">
+                        <!-- Medicine -->
+                        <div class="dosage-detail">
+                            <img src="" alt="" class="dosage-img">
+                            <div class="dosage-name">
+                                <h3>Ibuprofen</h3>
+                                <span>2 Tablets</span>
+                            </div>
+                            <div class="before-after">
+                                Before Meal
+                            </div>
+                            <div class="done">
+                                Done
+                            </div>
+                        </div>
+
+                        <div class="dosage-detail">
+                            <img src="" alt="" class="dosage-img">
+                            <div class="dosage-name">
+                                <h3>Ibuprofen</h3>
+                                <span>2 Tablets</span>
+                            </div>
+                            <div class="before-after">
+                                Before Meal
+                            </div>
+                            <div class="done">
+                                Done
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<hr>
+                <!-- Afternoon -->
+                <div class="afternoon-schedule schedule">
+                    <div class="timing">
+                        Afternoon
+                    </div>
+                    <div class="dosage">
+                        <div class="dosage-detail">
+                            <div class="dosage-name">
+                                <h3>Ibuprofen</h3>
+                                <span>2 Tablets</span>
+                            </div>
+                            <div class="before-after">
+                                Before Meal
+                            </div>
+                            <div class="done">
+                                Done
+                            </div>
+                            <img src="" alt="" class="dosage-img">
+                        </div>
+                    </div>
+                </div>
+<hr>
+                <!-- Evening -->
+                <div class="evening-schedule schedule">
+                    <div class="timing">
+                        Evening
+                    </div>
+                    <div class="dosage">
+                        <div class="dosage-detail">
+                            <div class="dosage-name">
+                                <h3>Ibuprofen</h3>
+                                <span>2 Tablets</span>
+                            </div>
+                            <div class="before-after">
+                                Before Meal
+                            </div>
+                            <div class="done">
+                                Done
+                            </div>
+                            <img src="" alt="" class="dosage-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
